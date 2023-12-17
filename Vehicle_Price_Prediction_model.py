@@ -76,7 +76,7 @@ def main():
         new_data = np.array(list(default_data.values()))[:10].reshape(1, -1)
 
         output = model.predict(new_data)
-        st.write(f"Predicted output: {output[0]}")
+        st.write(f"Predicted output: {output[0]:.2f}")
 
 if __name__ == "__main__":
     main()
